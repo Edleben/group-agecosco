@@ -257,9 +257,12 @@
             .role-tab {
                 font-weight: 600;
                 color: white;
-                padding: 5px 15px;
-                margin: 0 5px;
-                border-radius: 4px;
+                padding: 5px 25px;
+                margin: 0 10px 10px 0;
+                border-radius: 6px;
+                border: 2px solid transparent;
+                transition: background 0.2s, color 0.2s, border 0.2s;
+                outline: none;
             }
 
             .role-managing {
@@ -272,6 +275,22 @@
 
             .role-admin {
                 background-color: #e60000;
+            }
+
+            .role-tab.active-role {
+                background-color: #e60000 !important;
+                border: 2px solid #b30000;
+                color: #fff;
+                box-shadow: 0 2px 8px rgba(230, 0, 0, 0.12);
+            }
+
+            /* Couleur par défaut pour le bouton Administration Management */
+            .role-tab:not(.active-role).role-admin {
+                background-color: #1b1b6e;
+            }
+
+            .container.text-center.my-4 {
+                margin-bottom: 2.5rem !important;
             }
 
             .team-card {
@@ -310,46 +329,80 @@
         <body>
 
 
-            <!-- Role Tabs -->
+            <!-- Role Tabs as Buttons -->
             <div class="container text-center my-4">
-                <span class="role-tab role-managing">Managing Director</span>
-                <span class="role-tab role-operations">Operations Management</span>
-                <span class="role-tab role-admin">Administration Management</span>
+                <button id="btn-managing" class="role-tab role-managing" onclick="showTeam('managing')">Managing
+                    Director</button>
+                <button id="btn-operations" class="role-tab role-operations" onclick="showTeam('operations')">Operations
+                    Management</button>
+                <button id="btn-admin" class="role-tab role-admin" onclick="showTeam('admin')">Administration
+                    Management</button>
             </div>
 
-            <!-- Team Member Cards -->
+            <!-- Team Member Cards (Dynamic by Role) -->
             <div class="container">
                 <div class="row g-4">
-                    <!-- Member 1 -->
-                    <div class="col-md-4">
+                    <!-- Managing Director (2) -->
+                    <div class="col-md-4 team-group team-managing" style="display:none;">
                         <div class="team-card">
-                            <img src="img/team-1.jpg" alt="Dorah Wamada">
+                            <img src="img/team-1.jpg" alt="TOSSOU Messan Romeo">
                             <h5>TOSSOU Messan Romeo</h5>
-                            <small class="text-muted">Finance Manager</small>
+                            <small class="text-muted">Managing Director</small>
                             <p>Enthusiastic and self-motivated Chartered Accountant with 10 years of valuable
-                                experience.</p>
+                                experience.
+                            </p>
                         </div>
                     </div>
-
-                    <!-- Member 2 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 team-group team-managing" style="display:none;">
                         <div class="team-card">
-                            <img src="img/team-2.jpg" alt="Hellen Kabete">
-                            <h5>TOSSOU Ekoue Alex</h5>
-                            <small class="text-muted">HR & Administration Manager</small>
-                            <p>An accomplished HR & Admin Manager with 10 years of experience in operations and
-                                compliance.</p>
+                            <img src="img/team-4.jpg" alt="AHLONSOU Emmanuel">
+                            <h5>AHLONSOU Emmanuel</h5>
+                            <small class="text-muted">Managing Director</small>
+                            <p>Expert in strategic leadership and company management with 15+ years of experience.</p>
                         </div>
                     </div>
-
-                    <!-- Member 3 -->
-                    <div class="col-md-4">
+                    <!-- Operations Management (2) -->
+                    <div class="col-md-4 team-group team-operations" style="display:none;">
                         <div class="team-card">
-                            <img src="img/team-3.jpg" alt="Benta Mweu">
+                            <img src="img/team-3.jpg" alt="NTOMBA MOÏSE">
                             <h5>NTOMBA MOÏSE</h5>
-                            <small class="text-muted">Business Development Manager</small>
-                            <p>A seasoned Business Development Manager with over 18 years of experience in driving
-                                growth.</p>
+                            <small class="text-muted">Operations Manager</small>
+                            <p>A seasoned Operations Manager with over 18 years of experience in driving growth.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 team-group team-operations" style="display:none;">
+                        <div class="team-card">
+                            <img src="img/team-2.jpg" alt="TOSSOU Ekoue Alex">
+                            <h5>TOSSOU Ekoue Alex</h5>
+                            <small class="text-muted">Operations Supervisor</small>
+                            <p>Experienced in operations and compliance, ensuring smooth business processes.</p>
+                        </div>
+                    </div>
+                    <!-- Administration Management (3) -->
+                    <div class="col-md-4 team-group team-admin" style="display:none;">
+                        <div class="team-card">
+                            <img src="img/team-2.jpg" alt="TOSSOU Ekoue Alex">
+                            <h5>TOSSOU Ekoue Alex</h5>
+                            <small class="text-muted">Administration Management</small>
+                            <p>Expert in HR & Administration with 10 years of experience in operations and compliance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 team-group team-admin" style="display:none;">
+                        <div class="team-card">
+                            <img src="img/team-4.jpg" alt="AHLONSOU Emmanuel">
+                            <h5>AHLONSOU Emmanuel</h5>
+                            <small class="text-muted">Administration Management</small>
+                            <p>Expert in strategic leadership and company management with 15+ years of experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 team-group team-admin" style="display:none;">
+                        <div class="team-card">
+                            <img src="img/team-1.jpg" alt="TOSSOU Messan Romeo">
+                            <h5>TOSSOU Messan Romeo</h5>
+                            <small class="text-muted">Administration Management</small>
+                            <p>Chartered Accountant with 10 years of valuable experience in administration and finance.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -448,6 +501,29 @@
 
             <!-- Template Javascript -->
             <script src="js/main.js"></script>
+            <script>
+                function showTeam(role) {
+                    // Hide all
+                    document.querySelectorAll('.team-group').forEach(function (el) {
+                        el.style.display = 'none';
+                    });
+                    // Show selected
+                    document.querySelectorAll('.team-' + role).forEach(function (el) {
+                        el.style.display = '';
+                    });
+                    // Remove active from all buttons
+                    document.querySelectorAll('.role-tab').forEach(function (btn) {
+                        btn.classList.remove('active-role');
+                    });
+                    // Add active to selected
+                    var btn = document.getElementById('btn-' + role);
+                    if (btn) btn.classList.add('active-role');
+                }
+                // Show Managing Director by default
+                document.addEventListener('DOMContentLoaded', function () {
+                    showTeam('managing');
+                });
+            </script>
         </body>
 
 </html>
