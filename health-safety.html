@@ -3,13 +3,44 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Agecosco - EDX-Togo Webstudio</title>
+    <title>Health and Safety - GROUP AGECOSCO | Maritime Safety Standards & Compliance</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta
+        content="health and safety, maritime safety, HSE management, safety standards, GROUP AGECOSCO, Togo, West Africa, marine safety, occupational health, safety compliance, accident prevention"
+        name="keywords">
+    <meta
+        content="Discover GROUP AGECOSCO's comprehensive health and safety management approach. Learn about our systematic HSE practices, safety standards, and commitment to protecting staff, customers, and third parties in maritime operations across Togo and West Africa."
+        name="description">
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="GROUP AGECOSCO">
+    <link rel="canonical" href="https://www.agecosco.com/health-safety.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Health and Safety - GROUP AGECOSCO">
+    <meta property="og:description"
+        content="Discover GROUP AGECOSCO's comprehensive health and safety management approach for maritime operations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.agecosco.com/health-safety.html">
+    <meta property="og:image" content="https://www.agecosco.com/img/og-health-safety.jpg">
+    <meta property="og:site_name" content="GROUP AGECOSCO">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Health and Safety - GROUP AGECOSCO">
+    <meta name="twitter:description"
+        content="Discover GROUP AGECOSCO's comprehensive health and safety management approach for maritime operations.">
+    <meta name="twitter:image" content="https://www.agecosco.com/img/twitter-health-safety.jpg">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        as="style">
+    <link rel="preload" href="css/style.css" as="style">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +50,10 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"
+        crossorigin="anonymous">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -33,87 +66,273 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Health & Safety Page Specific Styles -->
+    <style>
+        /* Action Buttons Styling */
+        .action-buttons-section {
+            background-color: #ffffff;
+            margin-bottom: 0;
+        }
+
+        .btn-hse-primary {
+            background-color: #d40000;
+            border: 2px solid #d40000;
+            color: #ffffff;
+            font-weight: 500;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-hse-primary:hover,
+        .btn-hse-primary:focus {
+            background-color: #b30000;
+            border-color: #b30000;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 0, 0, 0.3);
+        }
+
+        .btn-hse-outline {
+            background-color: transparent;
+            border: 2px solid #d40000;
+            color: #d40000;
+            font-weight: 500;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-hse-outline:hover,
+        .btn-hse-outline:focus {
+            background-color: #d40000;
+            border-color: #d40000;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 0, 0, 0.3);
+        }
+
+        /* HSE Stats Section Styling */
+        .hse-stats-section {
+            background-color: #f8c6c6;
+            margin: 0;
+            padding: 60px 0;
+        }
+
+        .hse-stat-item {
+            border-right: 1px solid rgba(212, 0, 0, 0.2);
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hse-stat-item:last-child {
+            border-right: none;
+        }
+
+        .hse-stats-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d40000;
+            line-height: 1;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hse-stats-label {
+            font-size: 1.1rem;
+            color: #333333;
+            font-weight: 400;
+            text-transform: none;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 767.98px) {
+            .hse-stat-item {
+                border-right: none;
+                border-bottom: 1px solid rgba(212, 0, 0, 0.2);
+                padding: 30px 0;
+            }
+
+            .hse-stat-item:last-child {
+                border-bottom: none;
+            }
+
+            .hse-stats-number {
+                font-size: 2.8rem;
+            }
+
+            .hse-stats-label {
+                font-size: 1rem;
+            }
+
+            .btn-hse-primary,
+            .btn-hse-outline {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .action-buttons-section .d-flex {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Tablet Responsiveness */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .hse-stats-number {
+                font-size: 3rem;
+            }
+        }
+
+        /* Animation for stats counter */
+        .hse-stats-number {
+            transition: all 0.3s ease;
+        }
+
+        /* Focus states for accessibility */
+        .hse-stat-item:focus-within {
+            background-color: rgba(212, 0, 0, 0.05);
+        }
+
+        /* Remove any conflicting styles */
+        .stats-section {
+            display: none;
+        }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Health and Safety",
+        "description": "Discover GROUP AGECOSCO's comprehensive health and safety management approach for maritime operations.",
+        "url": "https://www.agecosco.com/health-safety.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "GROUP AGECOSCO",
+            "url": "https://www.agecosco.com"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "GROUP AGECOSCO",
+            "url": "https://www.agecosco.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rue du CYRUS Ablogame N°1, Villa N°140 - Zone Portuaire",
+                "addressLocality": "Lomé",
+                "addressCountry": "TG"
+            }
+        }
+    }
+    </script>
 
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip to main content</a>
+
     <!-- Spinner Start -->
     <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        role="status" aria-label="Loading page content">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="visually-hidden">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5">
+    <header class="container-fluid bg-dark px-5" role="banner">
         <div class="row gx-4 d-none d-lg-flex">
             <div class="col-lg-6 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
+                    <div class="btn-sm-square rounded-circle bg-primary me-2" aria-hidden="true">
                         <small class="fa fa-map-marker-alt text-white"></small>
                     </div>
-                    <small>Rue du CYRUS Ablogame N°1,Lomé, TOGO Lomé, TOGO</small>
+                    <small>
+                        <span class="visually-hidden">Address: </span>
+                        Rue du CYRUS Ablogame N°1, Lomé, TOGO
+                    </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
+                    <div class="btn-sm-square rounded-circle bg-primary me-2" aria-hidden="true">
                         <small class="fa fa-envelope-open text-white"></small>
                     </div>
-                    <small>info@agecosco.com</small>
+                    <small>
+                        <span class="visually-hidden">Email: </span>
+                        <a href="mailto:info@agecosco.com" class="text-light text-decoration-none">info@agecosco.com</a>
+                    </small>
                 </div>
             </div>
             <div class="col-lg-6 text-end">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
+                    <div class="btn-sm-square rounded-circle bg-primary me-2" aria-hidden="true">
                         <small class="fa fa-phone-alt text-white"></small>
                     </div>
-                    <small>Tél. : (228) 90-05-74-66
-                        Cél. : (228) 98-24-64-83</small>
+                    <small>
+                        <span class="visually-hidden">Phone: </span>
+                        <a href="tel:+22890057466" class="text-light text-decoration-none">Tél. : (228) 90-05-74-66</a>
+                        <a href="tel:+22898246483" class="text-light text-decoration-none">Cél. : (228) 98-24-64-83</a>
+                    </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
-                    <div class="btn-sm-square rounded-circle bg-primary me-2">
+                    <div class="btn-sm-square rounded-circle bg-primary me-2" aria-hidden="true">
                         <small class="far fa-clock text-white"></small>
                     </div>
-                    <small>Lun - Vend : 9H - 18H</small>
+                    <small>
+                        <span class="visually-hidden">Business hours: </span>
+                        <time>Lun - Vend : 9H - 18H</time>
+                    </small>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5" role="navigation"
+        aria-label="Main navigation">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary">Group Agecosco</h2>
+            <h2 class="m-0 text-primary">GROUP AGECOSCO</h2>
+            <!--<img src="img/logo.png" alt="GROUP AGECOSCO Logo" style="width: 50px; height: 50px;">-->
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-4 py-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-item nav-link dropdown-toggle">About</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <!--<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>-->
+                    <a href="about.html" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">About</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="About submenu">
                         <a href="./quality-policy.html" class="dropdown-item">Quality and policy</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="./health-safety.html" class="dropdown-item">Health and Safety</a>
+                        <a href="./health-safety.html" class="dropdown-item" aria-current="page">Health and Safety</a>
                         <a href="./general-conditions.html" class="dropdown-item">General conditions of the Service</a>
                     </div>
                 </div>
                 <a href="branches.html" class="nav-item nav-link">Branches</a>
-                <!--<a href="project.html" class="nav-item nav-link">Our Team</a>-->
                 <div class="nav-item dropdown">
-                    <a href="service.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="service.html" class="nav-item nav-link dropdown-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Services</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0" aria-label="Services submenu">
                         <a href="tally-inspection.html" class="dropdown-item">Tally Inspections and Supervisions</a>
                         <a href="survey.html" class="dropdown-item">Surveys</a>
-                        <a href="forensic.html" class="dropdown-item">Forensic investigations</a>
+                        <a href="./p-i-claims-handling.html" class="dropdown-item">P&I Claims Handling</a>
                         <a href="loss-prevent.html" class="dropdown-item">Loss prevention plans</a>
                         <a href="risk.html" class="dropdown-item">Risk and management</a>
                         <a href="fruit-perish.html" class="dropdown-item">Fruit and perishables</a>
@@ -123,14 +342,26 @@
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i
-                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/agecosco" aria-label="Follow us on Facebook" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.twitter.com/agecosco" aria-label="Follow us on Twitter" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.linkedin.com/company/agecosco" aria-label="Connect with us on LinkedIn"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/agecosco" aria-label="Follow us on Instagram" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -138,248 +369,294 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
-        <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Health And Safety </h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Services</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Health And Safety</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
+    <main id="main-content">
+        <section class="container-fluid page-header py-5" role="banner">
+            <div class="container py-5">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Health And Safety</h1>
+                <nav aria-label="Breadcrumb navigation" class="animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a class="text-white text-decoration-none" href="index.html">
+                                <span class="visually-hidden">Navigate to </span>Home
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="text-white text-decoration-none" href="about.html">
+                                <span class="visually-hidden">Navigate to </span>About
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">
+                            Health And Safety
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+    </main>
     <!-- Page Header End -->
 
     <!-- Page Health and Safety starts -->
+    <section class="health-safety-content" aria-labelledby="health-safety-heading">
 
+        <!-- Two-Column CTA Section -->
+        <section class="container cta-section" aria-labelledby="hse-approach-heading">
+            <div class="row align-items-center">
 
-    <style>
-        .cta-section {
-            padding: 60px 0;
-        }
+                <!-- Left: Image -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="img/duaenam-kosonglima.png"
+                        alt="Aerial view of maritime port operations showing GROUP AGECOSCO's health and safety commitment in action"
+                        class="cta-image" loading="lazy">
+                </div>
 
-        .cta-image {
-            width: 100%;
-            height: auto;
-            border-radius: 6px;
-        }
+                <!-- Right: Text + Buttons -->
+                <div class="col-md-6 cta-text">
+                    <h2 id="hse-approach-heading" class="h3 mb-4">Our Health, Safety & Environmental Approach</h2>
+                    <div class="hse-content">
+                        <p class="lead">
+                            Group Agecosco Maritime Company adopts a systematic approach to health, safety and
+                            environmental management, designed to ensure compliance with legislation and continuous
+                            improvement in performance.
+                        </p>
 
-        .cta-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #2d3e50;
-        }
+                        <h3 class="h5 mt-4 mb-3">Our Commitments:</h3>
+                        <ul class="hse-commitments list-unstyled">
+                            <li class="mb-2">
+                                <i class="bi bi-shield-check text-primary me-2" aria-hidden="true"></i>
+                                Protect staff, customers, suppliers and third parties from health hazards and risks
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-people text-primary me-2" aria-hidden="true"></i>
+                                Promote awareness of safe practices, believing all accidents are preventable
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-graph-up text-primary me-2" aria-hidden="true"></i>
+                                Promote individual responsibility for accident prevention
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-search text-primary me-2" aria-hidden="true"></i>
+                                Analyze accidents and incidents with significant consequences
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-clipboard-data text-primary me-2" aria-hidden="true"></i>
+                                Investigate and report all HSE incidents and near-misses
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-target text-primary me-2" aria-hidden="true"></i>
+                                Set improvement targets with continuous evaluation and reporting
+                            </li>
+                        </ul>
+                    </div>
 
-        .btn-red {
-            background-color: #e30613;
-            color: #fff;
-            border-radius: 30px;
-            padding: 10px 25px;
-            font-weight: 600;
-            border: none;
-        }
+                    <!-- Action buttons moved to separate section above stats -->
+                </div>
 
-        .btn-red:hover {
-            background-color: #c00410;
-            color: #fff;
-        }
-
-        .btn-outline-red {
-            border: 2px solid #e30613;
-            color: #e30613;
-            border-radius: 30px;
-            padding: 10px 25px;
-            font-weight: 600;
-            background-color: transparent;
-        }
-
-        .btn-outline-red:hover {
-            background-color: #e30613;
-            color: #fff;
-        }
-
-        .btn i {
-            margin-left: 8px;
-        }
-    </style>
-
-    <!-- Two-Column CTA Section -->
-    <section class="container cta-section">
-        <div class="row align-items-center">
-
-            <!-- Left: Image -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <img src="img/duaenam-kosonglima.png" alt="Vue aérienne portuaire" class="cta-image">
-                <!-- Replace with your actual image path -->
             </div>
+        </section>
 
-            <!-- Right: Text + Buttons -->
-            <div class="col-md-6 cta-text">
-                <p>
-                    Group Agecosco Maritime Company
-                    Adopts a systematic approach to health, safety and environmental management, designed to ensure
-                    compliance with legislation and continuous improvement in performance.
-                    Carries out its activities in such a way as to protect its staff, customers, suppliers and third
-                    parties from health hazards/risks.
-                    Promote awareness of safe practices, in the belief that all accidents are preventable, and promote
-                    individual responsibility for accident prevention.
-                    Analyze accidents/incidents likely to have significant consequences.
-                    Thoroughly investigate and report on all HSE incidents and near-misses likely to have significant
-                    actual or potential consequences.
-                    Set improvement targets, mediating, evaluating and reporting as necessary.
-
-                </p>
-                <div class="mt-4 d-flex gap-3 flex-wrap">
-                    <a href="#" class="btn btn-red">
-                        Contact-Us <i class="bi bi-arrow-right"></i>
-                    </a>
-                    <a href="#" class="btn btn-outline-red">
-                        Our Solutions <i class="bi bi-arrow-right"></i>
-                    </a>
+        <!-- Action Buttons Section -->
+        <section class="action-buttons-section py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <div class="d-flex gap-3 flex-wrap justify-content-center">
+                            <a href="contact.html" class="btn btn-hse-primary px-4 py-2"
+                                aria-label="Contact us about our health and safety services">
+                                Contact Us <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                            </a>
+                            <a href="service.html" class="btn btn-hse-outline px-4 py-2"
+                                aria-label="Learn more about our safety solutions">
+                                Our Solutions <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- Statistics Section -->
+        <section class="hse-stats-section py-5" aria-labelledby="company-stats-heading">
+            <div class="container-fluid">
+                <h2 id="company-stats-heading" class="visually-hidden">Company Statistics and Achievements</h2>
+                <div class="row g-0">
+                    <!-- Stat 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="hse-stat-item text-center py-4" role="group" aria-labelledby="stat-1-label">
+                            <div class="hse-stats-number" aria-label="Created in 1998">
+                                <time datetime="1998">1998</time>
+                            </div>
+                            <div id="stat-1-label" class="hse-stats-label">Created in</div>
+                            <p class="visually-hidden">GROUP AGECOSCO was created in 1998</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="hse-stat-item text-center py-4" role="group" aria-labelledby="stat-2-label">
+                            <div class="hse-stats-number" aria-label="18,994 alumni">
+                                <span data-counter="18994">18,994</span>
+                            </div>
+                            <div id="stat-2-label" class="hse-stats-label">Alumni</div>
+                            <p class="visually-hidden">We have 18,994 alumni from our operations</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="hse-stat-item text-center py-4" role="group" aria-labelledby="stat-3-label">
+                            <div class="hse-stats-number" aria-label="Over 200 experts">
+                                <span data-counter="200">200+</span>
+                            </div>
+                            <div id="stat-3-label" class="hse-stats-label">Experts</div>
+                            <p class="visually-hidden">Our team includes over 200 expert professionals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Structured Data for Statistics -->
+                <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "GROUP AGECOSCO",
+                    "foundingDate": "1998",
+                    "numberOfEmployees": "200+",
+                    "description": "Maritime survey and inspection company with over 18,994 alumni since 1998"
+                }
+                </script>
+            </div>
+        </section>
     </section>
-
-    <!-- Bootstrap Icons (for arrow icons) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <!--BAN Bootstrap 5 CSS -->
-
-    <style>
-        /* Background and spacing for stats section */
-        .stats-section {
-            background-color: #f5bdb7;
-            /* light pink */
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        /* Styling for the numbers */
-        .stats-number {
-            color: #e30613;
-            /* red */
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-
-        /* Styling for the labels under the numbers */
-        .stats-label {
-            color: #3a3a3a;
-            /* dark gray */
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin-top: 10px;
-        }
-    </style>
-
-
-
-
-    <!-- Statistics Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="row justify-content-center">
-
-                <!-- Stat 1 -->
-                <div class="col-6 col-md-4 mb-4 mb-md-0">
-                    <div class="stats-number">1998</div>
-                    <div class="stats-label">Created in</div>
-                </div>
-
-                <!-- Stat 2 -->
-                <div class="col-6 col-md-4 mb-4 mb-md-0">
-                    <div class="stats-number">18994</div>
-                    <div class="stats-label">Alumni</div>
-                </div>
-
-                <!-- Stat 3 -->
-                <div class="col-6 col-md-4">
-                    <div class="stats-number">200</div>
-                    <div class="stats-label">Experts</div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Bootstrap JS (optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <br>
     <!-- Page Health and Safety End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-secondary footer py-5 wow fadeIn" data-wow-delay="0.1s">
+    <footer class="container-fluid bg-dark text-secondary footer py-5 wow fadeIn" data-wow-delay="0.1s"
+        role="contentinfo">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rue du CYRUS-Ablogame N°1,Villa N°140-Zone
-                        Portuaire Lomé-TOGO</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Tél:(228) 90-05-74-66 Cél:(228) 98-24-64-83</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@agecosco.com /Group Agecosco@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
+                    <address class="mb-0">
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i>
+                            <span class="visually-hidden">Address: </span>
+                            Rue du CYRUS-Ablogame N°1<br>
+                            Villa N°140 - Zone Portuaire<br>
+                            Lomé-TOGO
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3" aria-hidden="true"></i>
+                            <span class="visually-hidden">Phone: </span>
+                            <a href="tel:+22890057466" class="text-secondary text-decoration-none">Tél:(228)
+                                90-05-74-66</a><br>
+                            <a href="tel:+22898246483" class="text-secondary text-decoration-none">Cél:(228)
+                                98-24-64-83</a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3" aria-hidden="true"></i>
+                            <span class="visually-hidden">Email: </span>
+                            <a href="mailto:info@agecosco.com"
+                                class="text-secondary text-decoration-none">info@agecosco.com</a> /
+                            <a href="mailto:agecosco@gmail.com"
+                                class="text-secondary text-decoration-none">agecosco@gmail.com</a>
+                        </p>
+                    </address>
+                    <div class="d-flex pt-2" role="list" aria-label="Social media links">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.twitter.com/agecosco" aria-label="Follow us on Twitter" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.facebook.com/agecosco" aria-label="Follow us on Facebook" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.youtube.com/agecosco" aria-label="Subscribe to our YouTube channel"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2"
+                            href="https://www.linkedin.com/company/agecosco" aria-label="Connect with us on LinkedIn"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Services</h5>
-                    <a class="btn btn-link" href="">Tally Inspections and Supervisions</a>
-                    <a class="btn btn-link" href="">Crisis Control Interventions</a>
-                    <a class="btn btn-link" href="">Forensic Investigations</a>
-                    <a class="btn btn-link" href="">Loss Prevention Plans</a>
-                    <a class="btn btn-link" href="">Risk Management</a>
+                    <nav aria-label="Services links">
+                        <a class="btn btn-link text-secondary" href="tally-inspection.html">Tally Inspections</a>
+                        <a class="btn btn-link text-secondary" href="survey.html">Surveys</a>
+                        <a class="btn btn-link text-secondary" href="p-i-claims-handling.html">P&I Claims Handling</a>
+                        <a class="btn btn-link text-secondary" href="fruit-perish.html">Fruit and Perishables</a>
+                        <a class="btn btn-link text-secondary" href="agri-food.html">Agrifood Sector</a>
+                        <a class="btn btn-link text-secondary" href="loss-prevent.html">Loss Prevention Plans</a>
+                        <a class="btn btn-link text-secondary" href="risk.html">Risk Management</a>
+                    </nav>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">Home</a>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Branches</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
+                    <nav aria-label="Quick navigation links">
+                        <a class="btn btn-link text-secondary" href="index.html">Home</a>
+                        <a class="btn btn-link text-secondary" href="about.html">About Us</a>
+                        <a class="btn btn-link text-secondary" href="service.html">Our Services</a>
+                        <a class="btn btn-link text-secondary" href="branches.html">Branches</a>
+                        <a class="btn btn-link text-secondary" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-secondary" href="team.html">Our Team</a>
+                        <a class="btn btn-link text-secondary" href="quality-policy.html">Quality Policy</a>
+                        <a class="btn btn-link text-secondary" href="health-safety.html" aria-current="page">Health &
+                            Safety</a>
+                        <a class="btn btn-link text-secondary" href="general-conditions.html">General Conditions</a>
+                    </nav>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
                     <p>Follow us through our announcements.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                    <form class="newsletter-form" id="newsletter-form" novalidate>
+                        <div class="position-relative w-100">
+                            <label for="newsletter-email" class="visually-hidden">Email address for newsletter</label>
+                            <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5"
+                                type="email" id="newsletter-email" name="email" placeholder="Your email" required
+                                aria-describedby="email-error newsletter-description">
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                                aria-describedby="newsletter-description">
+                                SignUp
+                            </button>
+                        </div>
+                        <div id="email-error" class="invalid-feedback mt-2" role="alert" aria-live="polite"></div>
+                        <div id="newsletter-success" class="text-success mt-2 d-none" role="alert" aria-live="polite">
+                            Thank you for subscribing to our newsletter!
+                        </div>
+                        <small id="newsletter-description" class="text-muted">
+                            We respect your privacy. Unsubscribe at any time.
+                        </small>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
     <!-- Footer End -->
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid py-4" style="background: #000000;">
+    <div class="container-fluid py-4" style="background: #000000;" role="contentinfo">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">Copyright
-                    &copy; <a class="border-bottom" href="#">Agecosco 2025</a>, All Right Reserved.
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-light">
+                        Copyright &copy; <time datetime="2025">2025</time>
+                        <a class="border-bottom text-light" href="index.html">GROUP AGECOSCO</a>, All Rights Reserved.
+                    </p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Distributed By
-                    <a class="border-bottom" href="https://themewagon.com/">E-Deal Express Sarl Department</a>
+                    <p class="mb-0 text-light">
+                        Designed By <a class="border-bottom text-light" href="https://htmlcodex.com" target="_blank"
+                            rel="noopener noreferrer">EDX Design Web Studio</a><br>
+                        Distributed By <a class="border-bottom text-light" href="https://themewagon.com/"
+                            target="_blank" rel="noopener noreferrer">E-Deal Express Sarl</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -388,13 +665,15 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
-
+    <a href="#main-content" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+        aria-label="Back to top of page">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -405,6 +684,132 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Page-specific JavaScript -->
+    <script>
+        // Health and Safety page specific functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            // Newsletter form validation and submission
+            const newsletterForm = document.getElementById('newsletter-form');
+            const emailInput = document.getElementById('newsletter-email');
+            const errorDiv = document.getElementById('email-error');
+            const successDiv = document.getElementById('newsletter-success');
+
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Reset previous states
+                    emailInput.classList.remove('is-invalid', 'is-valid');
+                    errorDiv.textContent = '';
+                    successDiv.classList.add('d-none');
+
+                    // Validate email
+                    const email = emailInput.value.trim();
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                    if (!email) {
+                        showError('Please enter your email address.');
+                        return;
+                    }
+
+                    if (!emailRegex.test(email)) {
+                        showError('Please enter a valid email address.');
+                        return;
+                    }
+
+                    // Simulate successful subscription
+                    emailInput.classList.add('is-valid');
+                    successDiv.classList.remove('d-none');
+                    emailInput.value = '';
+
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successDiv.classList.add('d-none');
+                        emailInput.classList.remove('is-valid');
+                    }, 5000);
+                });
+
+                function showError(message) {
+                    emailInput.classList.add('is-invalid');
+                    errorDiv.textContent = message;
+                }
+            }
+
+            // HSE Statistics counter animation
+            const hseStatsNumbers = document.querySelectorAll('[data-counter]');
+            const hseObserverOptions = {
+                threshold: 0.3,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const hseStatsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const finalValue = parseInt(target.getAttribute('data-counter'));
+                        animateHSECounter(target, finalValue);
+                        hseStatsObserver.unobserve(target);
+                    }
+                });
+            }, hseObserverOptions);
+
+            hseStatsNumbers.forEach(stat => {
+                hseStatsObserver.observe(stat);
+            });
+
+            function animateHSECounter(element, target) {
+                let current = 0;
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+
+                    // Format numbers based on target value
+                    if (target === 200) {
+                        element.textContent = Math.floor(current) + '+';
+                    } else if (target === 18994) {
+                        element.textContent = Math.floor(current).toLocaleString();
+                    } else if (target === 1998) {
+                        element.textContent = Math.floor(current);
+                    } else {
+                        element.textContent = Math.floor(current);
+                    }
+                }, 16);
+            }
+
+            // Add smooth interactions for action buttons
+            const actionButtons = document.querySelectorAll('.btn-hse-primary, .btn-hse-outline');
+            actionButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    // Add click animation
+                    this.style.transform = 'translateY(0) scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+
+                // Add keyboard support
+                button.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+        });
+
+        // Reduced motion preference detection
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            // Disable animations for users who prefer reduced motion
+            document.documentElement.style.setProperty('--animation-duration', '0s');
+        }
+    </script>
 </body>
 
 </html>
